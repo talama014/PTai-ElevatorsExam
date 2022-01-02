@@ -1,13 +1,6 @@
-Chức năng: 	Gọi thang máy: Khách nhấn gọi thang
-			- Thang đang đứng yên.
-			- Thang đang được gọi
-			- Thang đang chuyển khách 
-				 
+Chức năng: 				 
 		Chuyển khách:	Khách nhấn số tầng muốn tới 
+		
+- Input: Số tầng mà thang muốn tới (thang khách đang dùng, số tầng)
 
-
-Gọi N là số tầng mà tòa nhà có, M là số thang máy, 
-
-- Input: Số tầng mà thang muốn tới(array), Gọi thang máy (số tầng đang có người gọi thang máy)
-
-- Output: Giá trị mà thang máy đang dừng khi có các yêu cầu, viết lại lịch sử mà thang máy đã di chuyển
+- Output: in giá trị thang thay đổi theo các tầng, 
