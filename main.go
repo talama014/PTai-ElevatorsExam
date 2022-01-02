@@ -9,13 +9,9 @@ func main() {
 	// e là khai báo của 1 thang máy, với presentFloor là vị trí hiện tại của thang máy trong tòa nhà
 	// ElevatorRunTime là hàm mô phỏng sự di chuyển của thang máy từ vị trí hiện tại (presentFloor) đến giá trị tầng cần đến
 
-	Test()
-
-}
-func Test() {
-	e := Elevators{presentFloor: 0}
-	ElevatorRunTime(&e, 2)
-	go ElevatorRunTime(&e, 7)
+	e := Elevators{presentFloor: 5} // Khai báo thang máy đang ở tầng 5
+	ElevatorRun(&e, 2)              // thang máy di chuyển từ tầng 5 xuống tầng 2
+	ElevatorRun(&e, 3)              // thang máy di chuyển từ tầng 2 lên tầng 3
 
 }
 
@@ -28,7 +24,7 @@ func GetPresentFloor(e *Elevators) int {
 	return e.presentFloor
 }
 
-func ElevatorRunTime(e *Elevators, floor int) {
+func ElevatorRun(e *Elevators, floor int) {
 	presentFloor := GetPresentFloor(e)
 
 	fmt.Println("thang máy đang chạy")
