@@ -21,7 +21,7 @@ func main() {
 	go func() {
 		defer wg.Done()
 		e := Elevators{presentFloor: 1}
-		ElevatorRun(&e, 4) // thang máy di chuyển từ tầng 5 xuống tầng 2
+		ElevatorRun(&e, 4) // thang máy di chuyển từ tầng 1 lên tầng 4
 	}()
 	wg.Wait()
 
